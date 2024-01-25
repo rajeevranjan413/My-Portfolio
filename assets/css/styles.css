@@ -1105,7 +1105,33 @@ body.dark-theme{
   .scrollup{
     right: 3rem;
   }
+  .about__container{
+    grid-template-columns: 500px 440px;
+    align-items: center;
+    column-gap: 8rem;
+    padding-top: 2rem;
+  }
+  .about__data{
+    row-gap: 3.5rem;
+  }
+  .about__info{
+    text-align: initial;
+  }
+  .about__button{
+    justify-self: flex-start;
+  }
+  .about__skills-title{
+    text-align: initial;
+  }
+  .about__skills-content{
+    grid-template-columns: repeat(7,max-content);
+    justify-content: initial;
+  }
+  .about__skills-img{
+    width: 40px;
+  }
 }
+
 
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
