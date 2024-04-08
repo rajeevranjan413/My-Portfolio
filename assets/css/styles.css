@@ -307,7 +307,7 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 
 .nav__close {
@@ -417,13 +417,14 @@ img {
 
 .home__social-link {
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: white;
   transition: color .4s;
 
 }
 
 .home__social-link:hover {
-  color: var(--first-color);
+  /* color: var(--first-color-alt); */
+  color: var(--first-color-alt);
 }
 
 .home__button {
@@ -1023,8 +1024,8 @@ img {
   }
 
   .perfil {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     border-width: 15px;
   }
 
@@ -1048,7 +1049,7 @@ img {
     grid-template-columns: 500px 300px;
     align-items: center;
     column-gap: 4rem;
-    padding-block: 3.5rem 8rem;
+    padding-block: 0rem 8rem;
   }
 
   .home__content {
@@ -1070,7 +1071,7 @@ img {
   }
 
   .home__social-link {
-    color: var(--first-color);
+    color:white;
   }
 
   .home__button {
