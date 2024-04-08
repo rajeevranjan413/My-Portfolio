@@ -145,20 +145,20 @@ img {
 
 /*========== Variables Dark theme ==========*/
 
-body.dark-theme {
+/* body.dark-theme {
   --title-color: hsl(var(--hue), 24%, 85%);
   --text-color: hsl(var(--hue), 8%, 70%);
   --body-color: hsl(var(--hue), 16%, 8%);
   --container-color: hsl(var(--hue), 16%, 12%);
   --shadow-color: hsla(var(--hue), 32%, 4%, .4);
-}
+} */
 
 /*========== 
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
 
-.dark-theme .bg-header {
+/* .dark-theme .bg-header {
   box-shadow: 0 12px 24px var(--shadow-color);
 }
 
@@ -176,7 +176,7 @@ body.dark-theme {
 
 .dark-theme::-webkit-scrollbar-thumb:hover {
   background-color: hsla(var(--hue), 16%, 35%);
-}
+} */
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
