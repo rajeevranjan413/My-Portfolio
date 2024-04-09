@@ -1,4 +1,24 @@
-/*=============== SERVICES MODAL ===============*/
+// /*=============== SERVICES MODAL ===============*/
+// const openModal = document.getElementById("openModalBtn");
+// const modal = document.getElementById("myModal");
+// const closeModal = document.getElementsByClassName("close")[0];
+
+// openModa.addEventListener("click", function () {
+//   modal.style.display = "block";
+//   document.body.style.overflow = "hidden"; // hide the scrollbar
+// });
+
+// closeModal.addEventListener("click", function () {
+//   modal.style.display = "none";
+//   document.body.style.overflow = "auto"; // show the scrollbar
+// });
+
+// window.addEventListener("click", function (event) {
+//   if (event.target === modal) {
+//     modal.style.display = "none";
+//     document.body.style.overflow = "auto"; // show the scrollbar
+//   }
+// });
 
 const modal = document.querySelectorAll(".services__modal");
 
@@ -13,6 +33,8 @@ let activeModal = (modalClick) => {
 modalButton.forEach((modalButton, i) => {
   modalButton.addEventListener("click", () => {
     activeModal(i);
+    document.body.style.overflow = "hidden";
+    // document.body.style.backgroundColor = "white";
   });
 });
 
@@ -20,6 +42,7 @@ modalClose.forEach((modalClose) => {
   modalClose.addEventListener("click", () => {
     modal.forEach((modalRemove) => {
       modalRemove.classList.remove("active-modal");
+      document.body.style.overflow = "auto";
     });
   });
 });

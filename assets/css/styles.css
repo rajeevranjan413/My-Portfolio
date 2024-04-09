@@ -510,7 +510,7 @@ img {
 .services__icon {
   display: inline-block;
   font-size: 3rem;
-  color: var(--first-color);
+  color: var(--first-color-alt);
   margin-bottom: 1.5rem;
 }
 
@@ -548,7 +548,7 @@ img {
   position: relative;
   background-color: var(--container-color);
   padding: 3.5rem 1.5rem;
-  border-bottom: 6px solid var(--first-color);
+  border-bottom: 6px solid var(--first-color-alt);
   overflow: auto;
 }
 
@@ -581,19 +581,21 @@ img {
 }
 
 .services__modal-close {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--first-color-alt);
   cursor: pointer;
 }
 
 
 /* Active modal */
 .active-modal {
+  overflow: hidden;
   opacity: 1;
   visibility: visible;
+
 }
 
 
@@ -1071,7 +1073,7 @@ img {
   }
 
   .home__social-link {
-    color:white;
+    color: white;
   }
 
   .home__button {
