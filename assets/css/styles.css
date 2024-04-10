@@ -18,7 +18,7 @@
       -> Click on tab (Color Conversion)
       -> Copy the color mode (HSL)
   */
-  --hue: 255;
+  /* --hue: 255;
   --first-color: hsl(0, 0%, 10%);
   --first-color-alt: hsl(var(--hue), 82%, 56%);
   --first-color-light: hsl(var(--hue), 40%, 80%);
@@ -28,7 +28,20 @@
   --white-color: hsl(0, 0%, 100%);
   --body-color: hsl(0, 0%, 5%);
   --container-color: hsl(0, 0%, 7%);
-  --shadow-color: hsl(0, 0%, 0%);
+  --shadow-color: hsl(0, 0%, 0%); */
+  --hue: 255; /* Adjust hue if necessary */
+
+  --first-color: hsl(var(--hue), 70%, 90%); /* Lightened version of --first-color */
+  --first-color-alt: hsl(var(--hue), 82%, 56%); /* Maintain saturation */
+  --first-color-light: hsl(var(--hue), 40%, 80%); /* Maintain lightness */
+  --title-color: hsl(var(--hue), 0%, 10%); /* Darkened version of --title-color */
+  --text-color: hsl(var(--hue), 0%, 20%); /* Darkened version of --text-color */
+  --text-color-light: hsl(var(--hue), 0%, 30%); /* Darkened version of --text-color-light */
+  --white-color: hsl(var(--hue), 0%, 100%); /* Maintain white color */
+  --body-color: hsl(var(--hue), 0%, 95%); /* Lightened version of --body-color */
+  --container-color: hsl(var(--hue), 50%, 93%); /* Lightened version of --container-color */
+  --shadow-color: hsl(var(--hue), 0%, 80%); /* Lightened version of --shadow-color */
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -136,22 +149,37 @@ img {
 }
 
 .change-theme {
-  color: var(--white-color);
+  color: black;
   font-size: 1.25rem;
   cursor: pointer;
   transition: color .4s;
+}
+.dark-theme .change-theme{
+  color: white;
 }
 
 
 /*========== Variables Dark theme ==========*/
 
-/* body.dark-theme {
-  --title-color: hsl(var(--hue), 24%, 85%);
+body.dark-theme {
+  /* --title-color: hsl(var(--hue), 24%, 85%);
   --text-color: hsl(var(--hue), 8%, 70%);
   --body-color: hsl(var(--hue), 16%, 8%);
   --container-color: hsl(var(--hue), 16%, 12%);
   --shadow-color: hsla(var(--hue), 32%, 4%, .4);
-} */
+   */
+   --hue: 255;
+  --first-color: hsl(0, 0%, 10%);
+  --first-color-alt: hsl(var(--hue), 82%, 56%);
+  --first-color-light: hsl(var(--hue), 40%, 80%);
+  --title-color: hsl(0, 0%, 90%);
+  --text-color: hsl(0, 0%, 80%);
+  --text-color-light: hsl(0, 0%, 70%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 5%);
+  --container-color: hsl(0, 0%, 7%);
+  --shadow-color: hsl(0, 0%, 0%);
+}
 
 /*========== 
 	Color changes in some parts of 
@@ -255,9 +283,12 @@ img {
 }
 
 .nav__logo {
-  color: var(--white-color);
+  color: black;
   font-weight: var(--font-semi-bold);
   transition: color .4s;
+}
+.dark-theme .nav__logo{
+  color: white;
 }
 
 .nav__toggle,
@@ -268,9 +299,12 @@ img {
 }
 
 .nav__toggle {
-  color: var(--white-color);
+  color: black;
   transition: color .4s;
-
+}
+.dark-theme .nav__toggle {
+  color: white;
+  transition: color .4s;
 }
 
 .nav__close {
@@ -352,7 +386,7 @@ img {
 
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding: 1rem 2rem;
@@ -360,8 +394,8 @@ img {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
-  box-shadow: 0 8px 24px hsla(var(--hue), 90%, 30%, .3);
+  
+  box-shadow: 0 8px 24px hsla(var(--hue), 90%, 70%, .3);
 }
 
 /*=============== HOME ===============*/
@@ -417,7 +451,7 @@ img {
 
 .home__social-link {
   font-size: 1.5rem;
-  color: white;
+  color: black;
   transition: color .4s;
 
 }
@@ -794,7 +828,7 @@ img {
 /*=============== FOOTER ===============*/
 
 .footer {
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
 }
 
 .footer__container {
