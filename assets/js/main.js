@@ -43,7 +43,7 @@ const getCurrentTheme = () =>
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "ri-moon-line" : "ri-sun-line";
 
-if (selectedTheme) {
+if (1) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
