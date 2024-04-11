@@ -29,8 +29,7 @@
   --body-color: hsl(0, 0%, 5%);
   --container-color: hsl(0, 0%, 7%);
   --shadow-color: hsl(0, 0%, 0%); */
-  --hue: 255; /* Adjust hue if necessary */
-
+  --hue: 255; 
   --first-color: hsl(var(--hue), 70%, 90%); 
   --first-color-alt: hsl(var(--hue), 82%, 56%); 
   --first-color-light: hsl(var(--hue), 40%, 80%); 
