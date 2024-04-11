@@ -18,17 +18,17 @@
       -> Click on tab (Color Conversion)
       -> Copy the color mode (HSL)
   */
-  --hue: 255;
-  --first-color: hsl(0, 0%, 10%);
-  --first-color-alt: hsl(var(--hue), 82%, 56%);
-  --first-color-light: hsl(var(--hue), 40%, 80%);
-  --title-color: hsl(0, 0%, 90%);
-  --text-color: hsl(0, 0%, 80%);
-  --text-color-light: hsl(0, 0%, 70%);
-  --white-color: hsl(0, 0%, 100%);
-  --body-color: hsl(0, 0%, 5%);
-  --container-color: hsl(0, 0%, 7%);
-  --shadow-color: hsl(0, 0%, 0%);
+  --hue: 255; 
+  --first-color: hsl(var(--hue), 70%, 90%); 
+  --first-color-alt: hsl(var(--hue), 82%, 56%); 
+  --first-color-light: hsl(var(--hue), 40%, 80%); 
+  --title-color: hsl(var(--hue), 0%, 10%); 
+  --text-color: hsl(var(--hue), 0%, 20%); 
+  --text-color-light: hsl(var(--hue), 0%, 30%); /* Darkened version of --text-color-light */
+  --white-color: hsl(var(--hue), 0%, 100%); 
+  --body-color: hsl(var(--hue), 0%, 95%); 
+  --container-color: hsl(var(--hue), 50%, 93%);
+  --shadow-color: hsl(var(--hue), 0%, 80%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
