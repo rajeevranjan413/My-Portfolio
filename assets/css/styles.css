@@ -168,7 +168,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue), 16%, 12%);
   --shadow-color: hsla(var(--hue), 32%, 4%, .4);
    */
---hue: 255;
+  --hue: 255;
   --first-color: hsl(0, 0%, 10%);
   --first-color-alt: hsl(var(--hue), 82%, 56%);
   --first-color-light: hsl(var(--hue), 40%, 80%);
