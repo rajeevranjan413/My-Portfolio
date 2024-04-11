@@ -31,16 +31,16 @@
   --shadow-color: hsl(0, 0%, 0%); */
   --hue: 255; /* Adjust hue if necessary */
 
-  --first-color: hsl(var(--hue), 70%, 90%); /* Lightened version of --first-color */
-  --first-color-alt: hsl(var(--hue), 82%, 56%); /* Maintain saturation */
-  --first-color-light: hsl(var(--hue), 40%, 80%); /* Maintain lightness */
-  --title-color: hsl(var(--hue), 0%, 10%); /* Darkened version of --title-color */
-  --text-color: hsl(var(--hue), 0%, 20%); /* Darkened version of --text-color */
+  --first-color: hsl(var(--hue), 70%, 90%); 
+  --first-color-alt: hsl(var(--hue), 82%, 56%); 
+  --first-color-light: hsl(var(--hue), 40%, 80%); 
+  --title-color: hsl(var(--hue), 0%, 10%); 
+  --text-color: hsl(var(--hue), 0%, 20%); 
   --text-color-light: hsl(var(--hue), 0%, 30%); /* Darkened version of --text-color-light */
-  --white-color: hsl(var(--hue), 0%, 100%); /* Maintain white color */
-  --body-color: hsl(var(--hue), 0%, 95%); /* Lightened version of --body-color */
-  --container-color: hsl(var(--hue), 50%, 93%); /* Lightened version of --container-color */
-  --shadow-color: hsl(var(--hue), 0%, 80%); /* Lightened version of --shadow-color */
+  --white-color: hsl(var(--hue), 0%, 100%); 
+  --body-color: hsl(var(--hue), 0%, 95%); 
+  --container-color: hsl(var(--hue), 50%, 93%);
+  --shadow-color: hsl(var(--hue), 0%, 80%);
 
 
   /*========== Font and typography ==========*/
@@ -168,7 +168,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue), 16%, 12%);
   --shadow-color: hsla(var(--hue), 32%, 4%, .4);
    */
-   --hue: 255;
+--hue: 255;
   --first-color: hsl(0, 0%, 10%);
   --first-color-alt: hsl(var(--hue), 82%, 56%);
   --first-color-light: hsl(var(--hue), 40%, 80%);
