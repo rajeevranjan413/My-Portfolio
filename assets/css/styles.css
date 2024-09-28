@@ -441,6 +441,14 @@ body.dark-theme {
 
 }
 
+.box .role p {
+  color: var(--text-color);
+}
+
+.box .title h1 {
+  color: var(--text-color);
+}
+
 .home__name {
   font-size: var(--h1-font-size);
 }
